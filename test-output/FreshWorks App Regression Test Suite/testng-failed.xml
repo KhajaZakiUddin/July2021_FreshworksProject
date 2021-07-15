@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FreshWorks App Regression Test Suite]">
+  <test verbose="2" name="Regression Funional Test">
+    <classes>
+      <class name="com.qa.freshworks.tests.LoginPageTest"/>
+      <class name="com.qa.freshworks.tests.HomePageTest"/>
+    </classes>
+  </test> <!-- Regression Funional Test -->
+  <test name="Regression Funional Test(failed)">
+    <classes>
+      <class name="com.qa.freshworks.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="doLoginTest"/>
+        </methods>
+      </class> <!-- com.qa.freshworks.tests.LoginPageTest -->
+      <class name="com.qa.freshworks.tests.HomePageTest">
+        <methods>
+          <include name="verifyLoggedInUserTest"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyHomePageHeaderTest"/>
+        </methods>
+      </class> <!-- com.qa.freshworks.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Regression Funional Test(failed) -->
+</suite> <!-- Failed suite [FreshWorks App Regression Test Suite] -->

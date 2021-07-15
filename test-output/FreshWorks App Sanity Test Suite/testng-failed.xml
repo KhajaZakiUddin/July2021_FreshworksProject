@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FreshWorks App Sanity Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.freshworks.listeners.ScreenshotListener"/>
+  </listeners>
+  <test verbose="2" name="Regression Functional Sanity Test">
+    <classes>
+      <class name="com.qa.freshworks.tests.LoginPageTest"/>
+    </classes>
+  </test> <!-- Regression Functional Sanity Test -->
+  <test name="Regression Functional Sanity Test(failed)">
+    <classes>
+      <class name="com.qa.freshworks.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="doLoginTest"/>
+        </methods>
+      </class> <!-- com.qa.freshworks.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- Regression Functional Sanity Test(failed) -->
+</suite> <!-- Failed suite [FreshWorks App Sanity Test Suite] -->

@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 56.925 s <<< FAILURE! - in TestSuite
+doLoginTest(com.qa.freshworks.tests.LoginPageTest)  Time elapsed: 35.466 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h4[text()='Test Animation'] (tried for 30 second(s) with 500 milliseconds interval)
+	at com.qa.freshworks.tests.LoginPageTest.doLoginTest(LoginPageTest.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//h4[text()='Test Animation']"}
+  (Session info: chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'KHAJAZAKIUDDIN', ip: '192.168.29.169', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\KHAJAZ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee2c340ec0de342ac3148c97b9bea666
+*** Element info: {Using=xpath, value=//h4[text()='Test Animation']}
+	at com.qa.freshworks.tests.LoginPageTest.doLoginTest(LoginPageTest.java:77)
+

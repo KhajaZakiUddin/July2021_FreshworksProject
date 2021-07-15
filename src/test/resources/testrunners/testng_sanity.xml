@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="FreshWorks App Sanity Test Suite">
+
+	<listeners>
+	
+		<listener class-name="com.qa.freshworks.listeners.ScreenshotListener" />
+		<!-- <listener class-name="com.qa.freshworks.listeners.pdfListener" /> 
+		<listener class-name="com.qa.freshworks.listeners.TestAllureListener" /> 
+		<listener class-name="com.qa.freshworks.listeners.ExtentReportListener" /> -->
+		
+	</listeners>
+
+	<test name="Regression Functional Sanity Test" verbose="2">
+
+		<classes>
+			<class name="com.qa.freshworks.tests.LoginPageTest" />
+		</classes>
+
+	</test> <!-- Default test -->
+
+</suite> <!-- Default suite -->
