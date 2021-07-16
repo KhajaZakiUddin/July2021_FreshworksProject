@@ -22,6 +22,7 @@ ElementActions elementAction;
 	By logInButton=By.xpath("//button[text()='Sign in']");
 	By freshworksLogo=By.xpath("//img[@alt='Organization Logo']");
 	By termsLink=By.xpath("//div[@class='css-5g2dcw']//a[text()='Terms']");
+	By gittest=By.id("gittest");
 	
 	//2. Creating the constructor of the LoginPage Class to initialize the driver at global level
 	public LoginPage(WebDriver driver){
